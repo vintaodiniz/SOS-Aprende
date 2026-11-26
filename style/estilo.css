@@ -1,0 +1,384 @@
+:root {
+  --sos-red: #c62838;
+  --sos-red-dark: #9e1d2b;
+  --sos-red-soft: #fff1f2;
+  --sos-ink: #172a3a;
+  --sos-muted: #637587;
+  --sos-paper: #ffffff;
+  --sos-background: #f3f6f9;
+  --sos-border: #e2e8ee;
+  --sos-green-soft: #eaf7ef;
+  --sos-blue: #1d5b78;
+}
+
+.stApp {
+  background:
+    radial-gradient(ellipse at 92% 0%, rgba(198, 40, 56, 0.045), transparent 30rem),
+    var(--sos-background);
+  color: var(--sos-ink);
+}
+
+[data-testid="stMainBlockContainer"] {
+  max-width: 1180px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+[data-testid="stHeader"] {
+  background: rgba(243, 246, 249, 0.96);
+  border-bottom: 1px solid var(--sos-border);
+}
+
+[data-testid="stSidebar"] {
+  background: #fff;
+  border-right: 1px solid var(--sos-border);
+  min-width: 17rem;
+  width: 17rem;
+}
+
+[data-testid="stSidebar"] > div:first-child {
+  padding-top: 1rem;
+}
+
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p {
+  color: var(--sos-ink);
+}
+
+[data-testid="stSidebarNav"] {
+  padding-top: 0.5rem;
+}
+
+[data-testid="stSidebarNav"] a {
+  border-radius: 10px;
+  margin: 0.15rem 0.5rem;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+[data-testid="stSidebarNav"] a:hover {
+  background: #fff1f2;
+  color: var(--sos-red-dark);
+}
+
+h1, h2, h3 {
+  color: var(--sos-ink);
+  letter-spacing: -0.035em;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 2.8rem) !important;
+  line-height: 1.12 !important;
+  margin-bottom: 0.4rem !important;
+}
+
+h2 {
+  margin-top: 1.7rem !important;
+}
+
+p, li {
+  color: #435568;
+  line-height: 1.7;
+}
+
+.sos-brand {
+  align-items: center;
+  display: flex;
+  gap: 0.75rem;
+  margin: 0.25rem 0 1.25rem;
+  padding: 0.3rem 0.5rem 1rem;
+}
+
+.sos-brand-mark {
+  align-items: center;
+  background: var(--sos-red);
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  font-size: 1.3rem;
+  height: 42px;
+  justify-content: center;
+  width: 42px;
+}
+
+.sos-brand-name {
+  color: var(--sos-ink);
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.sos-brand-caption {
+  color: var(--sos-muted);
+  font-size: 0.76rem;
+  margin-top: 0.1rem;
+}
+
+.sos-eyebrow {
+  color: var(--sos-red);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.sos-hero {
+  align-items: center;
+  background:
+    radial-gradient(ellipse at 94% 8%, rgba(255, 255, 255, 0.16), transparent 18rem),
+    linear-gradient(120deg, #7d1825 0%, #b42332 54%, #d5414d 100%);
+  border: 0;
+  border-radius: 24px;
+  box-shadow: 0 18px 45px rgba(107, 25, 36, 0.18);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.35rem 0 1.35rem;
+  overflow: hidden;
+  padding: clamp(1.7rem, 5vw, 3.5rem);
+  position: relative;
+}
+
+.sos-hero-copy {
+  max-width: 680px;
+  position: relative;
+  z-index: 1;
+}
+
+.sos-hero::after {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 50%;
+  content: "";
+  height: 22rem;
+  position: absolute;
+  right: -7rem;
+  top: -12rem;
+  width: 22rem;
+}
+
+.sos-hero h1 {
+  color: #fff;
+  font-size: clamp(2.35rem, 5.2vw, 4rem) !important;
+  margin: 0.45rem 0 0.15rem !important;
+  white-space: nowrap;
+}
+
+.sos-hero p {
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 650px;
+}
+
+.sos-hero .sos-eyebrow {
+  color: #ffe1e3;
+}
+
+.sos-tagline {
+  color: #fff !important;
+  font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+  font-weight: 700;
+  margin: 0.2rem 0 1rem;
+}
+
+.sos-hero-side {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: 1rem;
+  min-width: 190px;
+  position: relative;
+  z-index: 1;
+}
+
+.sos-hero-icon {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 32px;
+  display: flex;
+  font-size: clamp(4rem, 9vw, 7rem);
+  height: 190px;
+  justify-content: center;
+  transform: rotate(3deg);
+  width: 190px;
+}
+
+.sos-page-heading {
+  border-bottom: 1px solid var(--sos-border);
+  margin-bottom: 1.5rem;
+  padding: 0.2rem 0 1.25rem;
+}
+
+.sos-page-heading p {
+  color: var(--sos-muted);
+  font-size: 1.02rem;
+  margin-bottom: 0;
+  max-width: 760px;
+}
+
+.sos-card {
+  background: var(--sos-paper);
+  border: 1px solid var(--sos-border);
+  border-radius: 18px;
+  box-shadow: 0 5px 16px rgba(23, 42, 58, 0.035);
+  height: 100%;
+  padding: 1.35rem;
+  transition: border-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
+}
+
+.sos-card:hover {
+  border-color: #efb9bf;
+  box-shadow: 0 12px 26px rgba(23, 42, 58, 0.08);
+  transform: translateY(-2px);
+}
+
+.sos-card h3 {
+  margin: 0.25rem 0 0.45rem;
+}
+
+.sos-card p {
+  margin-bottom: 0;
+}
+
+.sos-card-icon {
+  align-items: center;
+  background: var(--sos-red-soft);
+  border-radius: 12px;
+  color: var(--sos-red);
+  display: inline-flex;
+  font-size: 1.3rem;
+  height: 42px;
+  justify-content: center;
+  width: 42px;
+}
+
+.sos-section-label {
+  color: var(--sos-red);
+  font-size: 0.77rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.35rem;
+  text-transform: uppercase;
+}
+
+.sos-step {
+  background: #fff;
+  border: 1px solid var(--sos-border);
+  border-radius: 14px;
+  margin: 0.6rem 0;
+  padding: 0.9rem 1rem;
+}
+
+.sos-alert {
+  background: var(--sos-red-soft);
+  border: 1px solid #f0c6cb;
+  border-left: 5px solid var(--sos-red);
+  border-radius: 14px;
+  color: #5c1820;
+  margin: 1rem 0;
+  padding: 1rem 1.15rem;
+}
+
+.sos-alert p {
+  color: inherit;
+  margin: 0;
+}
+
+.sos-success {
+  background: var(--sos-green-soft);
+  border: 1px solid #cce7d6;
+  border-left: 5px solid #21834b;
+  border-radius: 14px;
+  margin: 1rem 0;
+  padding: 1rem 1.15rem;
+}
+
+.sos-muted {
+  color: var(--sos-muted);
+}
+
+.sos-contact {
+  background: linear-gradient(145deg, #fff 20%, #fff5f5 100%);
+  border: 1px solid #f0d7da;
+  border-radius: 20px;
+  box-shadow: 0 8px 22px rgba(23, 42, 58, 0.05);
+  padding: 1.6rem;
+  text-align: center;
+}
+
+.sos-contact-icon {
+  font-size: 1.7rem;
+}
+
+.sos-contact h2 {
+  margin: 0.5rem 0 0 !important;
+}
+
+.sos-contact-number {
+  color: var(--sos-red);
+  font-size: clamp(2.6rem, 5vw, 3.5rem);
+  font-weight: 850;
+  letter-spacing: -0.05em;
+  line-height: 1.15;
+}
+
+.sos-contact p {
+  margin-bottom: 0;
+}
+
+.sos-stat {
+  border-left: 3px solid var(--sos-red);
+  padding-left: 0.9rem;
+}
+
+.sos-stat strong {
+  color: var(--sos-ink);
+  display: block;
+  font-size: 1.4rem;
+}
+
+.sos-stat span {
+  color: var(--sos-muted);
+  font-size: 0.9rem;
+}
+
+.stButton > button[kind="primary"] {
+  background: var(--sos-red);
+  border-color: var(--sos-red);
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.stButton > button[kind="primary"]:hover {
+  background: var(--sos-red-dark);
+  border-color: var(--sos-red-dark);
+}
+
+.stButton > button, .stLinkButton > a {
+  border-radius: 10px;
+}
+
+[data-testid="stProgressBar"] > div > div {
+  background: var(--sos-red);
+}
+
+div[data-testid="stAlert"] {
+  border-radius: 12px;
+}
+
+@media (max-width: 720px) {
+  [data-testid="stMainBlockContainer"] {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2.2rem;
+  }
+
+  .sos-hero {
+    border-radius: 18px;
+  }
+
+  .sos-hero-side {
+    display: none;
+  }
+
+  .sos-hero h1 {
+    font-size: clamp(2.2rem, 10vw, 3rem) !important;
+  }
+}
