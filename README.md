@@ -80,8 +80,8 @@ projeto. Para encerrar a aplicação, volte ao terminal e pressione **Ctrl+C**.
 - **Disciplina:** Sistemas Multimídia.
 - **Professor:** Rodrigo Medeiros Costa.
 - **Integrantes:** Victor Diniz, Thiago Azevedo e Alexandre Brahuna.
-- **Vídeo do Pitch Audiovisual:** [apresentacao/SOS-Aprende-Pitch.mp4](apresentacao/SOS-Aprende-Pitch.mp4)
-- **Documentação de Produção:** [documentacao/Documentacao-de-Producao-SOS-Aprende.docx](documentacao/Documentacao-de-Producao-SOS-Aprende.docx)
+- **Vídeo do Pitch Audiovisual:** `apresentacao/SOS_Aprende_Pitch.mp4` (arquivo de vídeo localizado na pasta `apresentacao/` do repositório).
+- **Documentação de Produção:** [documentacao/Documentacao-de-Producao-SOS-Aprende.docx](documentacao/Documentacao-de-Producao-SOS-Aprende.docx) (localizado na pasta `documentacao/` do repositório, no caminho `documentacao/Documentacao-de-Producao-SOS-Aprende.docx`).
 
 ## Aviso educativo
 
