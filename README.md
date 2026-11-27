@@ -68,7 +68,20 @@ projeto. Para encerrar a aplicação, volte ao terminal e pressione **Ctrl+C**.
 - `data/`: conteúdos educativos, vídeos, perguntas e recursos compartilhados.
 - `style/estilo.css`: estilos visuais da aplicação.
 - `assets/`: diretório para materiais complementares.
+- `documentacao/`: documentação de produção do pitch audiovisual.
+- `apresentacao/`: vídeo final do pitch audiovisual.
 - `requirements.txt`: dependências necessárias para execução.
+
+## Materiais da avaliação — Sistemas Multimídia
+
+- **Projeto:** SOS Aprende — Plataforma Educativa de Primeiros Socorros.
+- **Instituição:** Universidade da Amazônia (UNAMA).
+- **Curso:** Ciência da Computação.
+- **Disciplina:** Sistemas Multimídia.
+- **Professor:** Rodrigo Medeiros Costa.
+- **Integrantes:** Victor Diniz, Thiago Azevedo e Alexandre Brahuna.
+- **Vídeo do Pitch Audiovisual:** [apresentacao/SOS-Aprende-Pitch.mp4](apresentacao/SOS-Aprende-Pitch.mp4)
+- **Documentação de Produção:** [documentacao/Documentacao-de-Producao-SOS-Aprende.docx](documentacao/Documentacao-de-Producao-SOS-Aprende.docx)
 
 ## Aviso educativo
 
